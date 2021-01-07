@@ -33,7 +33,7 @@ class ListQuotesActivity : AppCompatActivity() {
     private fun getListQuotes() {
         binding.progressBar.visibility = View.VISIBLE
         val client = AsyncHttpClient()
-        val url = "tps://quote-api.dicoding.dev"
+        val url = "https://quote-api.dicoding.dev"
         client.get(url, object : AsyncHttpResponseHandler() {
             override fun onSuccess(
                 statusCode: Int,
